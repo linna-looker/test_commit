@@ -28,6 +28,9 @@ persist_with: linna_test_default_datagroup
 explore: users {}
 
 explore: orders {
+  # sql_always_where: {% if @{previous_period_start_date} = '0' %} 1=1 {% endif %};;
+  # sql_always_where: @{custom_status_filter_value} = 'cancelled';;
+
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
