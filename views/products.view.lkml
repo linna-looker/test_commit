@@ -69,6 +69,10 @@ view: products {
 
   measure: count {
     type: count
+<<<<<<< HEAD
     drill_fields: [id, item_name, inventory_items.count, inventory_items_vijaya.count, product_sheets.count]
+=======
+    drill_fields: [id, item_name, product_sheets.count, inventory_items.count]
+>>>>>>> branch 'master' of https://github.com/linna-looker/test_commit.git
   }
 }

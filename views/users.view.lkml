@@ -102,6 +102,10 @@ view: users {
 
   measure: count {
     type: count
+<<<<<<< HEAD
     drill_fields: [id, last_name, first_name, orders.count, pvalue.count]
+=======
+    drill_fields: [id, last_name, first_name, orders.count]
+>>>>>>> branch 'master' of https://github.com/linna-looker/test_commit.git
   }
 }
